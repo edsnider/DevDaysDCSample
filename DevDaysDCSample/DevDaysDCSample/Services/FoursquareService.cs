@@ -11,8 +11,9 @@ namespace DevDaysDCSample.Services
     public class FoursquareService : IFoursquareService
     {
 #region Foursquare API client props 
-        private const string _CLIENT_ID = "MHZODVIJAWGPYYGJTWCO1ES1O0YNBDSSWZ2RYJGWNAJKBWZM"; 
-        private const string _CLIENT_SECRET = "BUSJTOT2MT5WXLYJSOL5N4CAPGPLF2MF0TEXZBVZB2PQUVQ1"; 
+		// TODO: Update with your own Foursquare Client ID and Client Secret: developer.foursquare.com
+        private const string _CLIENT_ID = "<INSERT YOUR CLIENT ID>"; 
+        private const string _CLIENT_SECRET = "<INSERT YOUR CLIENT SECRET>"; 
 #endregion 
         
         public async Task<VenuesResponse> GetVenues(string query, GeoCoords coords)
